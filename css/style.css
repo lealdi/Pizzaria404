@@ -1,8 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    background-color: gray;
+    box-sizing: border-box;   
 }
 
 body{
@@ -19,22 +18,26 @@ body{
 }
 /*********************/
 
-/*FOOTER*/
+/*Header*/
 
-footer{   
+header{   
     margin: 0 auto;     
     border: 1px solid black;
-    height: 6em;
+    height: 7em;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(218, 155, 55);
 }
 
 .logo{
     width: 150px;
-    height: 90px;
-    border: 1px solid blue;
-    margin: 0 2%;    
+    height: 90px;   
+    margin: 0 2%;  
+    background-image: url('/images/Logo.png');  
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 20px;
 }
 
 .info{
@@ -49,12 +52,24 @@ footer{
     align-items:flex-start;    
 }
 
+.info p:nth-of-type(1)::after{
+    content: url('/images/marcadorR.png');
+    margin-left: 10px;    
+}
+
+.info p:nth-of-type(2)::after{
+    content: url('/images/clockR.png');
+    margin-left: 10px;    
+}
+
+
 nav{   
     height: 90px;
     border: 1px solid purple;
     display: flex;
     flex-flow: column;
-    justify-content: flex-end;
+    justify-content: space-around;
+    font-family: 'Merienda', cursive
 }
 
 nav ul{    
@@ -67,7 +82,17 @@ nav ul{
 }
 
 nav ul li{            
-      font-size: 1.25em;
+      font-size: 1.25em;      
 }
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.slogan{
+    font-size: 18px;
+}
+
 /**********************/
 
