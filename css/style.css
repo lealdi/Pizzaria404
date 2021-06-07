@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Nunito Sans', sans-serif;
-    background-color: gray;
+    background-color: rgb(197, 194, 194);
 }
 
 /*Container*/
@@ -22,13 +22,12 @@ body{
 /*Header*/
 
 header{   
-    margin: 0 auto;     
-    border: 1px solid black;
+    margin: 0 auto;      
     height: 7em;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(32, 83, 112);
+    background-color: rgb(23, 67, 77);
 }
 
 .logo{
@@ -53,14 +52,14 @@ header{
     align-items:flex-start;    
 }
 
-.info p:nth-of-type(1)::after{
+.info p:nth-of-type(1)::before{
     content: url('../images/marcadorR.png');
-    margin-left: 10px;    
+    margin-right: 6px;    
 }
 
-.info p:nth-of-type(2)::after{
+.info p:nth-of-type(2)::before{
     content: url('../images/clockR.png');
-    margin-left: 10px;    
+    margin-right: 6px;    
 }
 
 
@@ -96,6 +95,15 @@ nav ul li a:hover{
     transform: scale(1.1);
 }
 
+nav ul li:nth-of-type(4){    
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+nav ul li:nth-of-type(4):hover{        
+    background-color: rgb(23, 67, 77);
+}
+
 .slogan{
     font-size: 18px;
     color:rgb(22, 22, 22);
@@ -111,13 +119,28 @@ nav ul li a:hover{
 
 /**********************/
 
-/*Section*/
-
-section{
-    border:1px solid black;
-    height: 200px;
+/*Section 1*/
+section{    
+      
+    background-color: rgb(247, 251, 251);
 }
 
-section .container{
-    border:1px solid purple;
+.section1{
+    background-image: url('../images/back-section1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-bottom: 10px;
+}
+
+
+
+/*********************/
+
+/*Section 2*/
+
+.glide__slide img{
+    width: 100%;
+    height: 350px;
 }
