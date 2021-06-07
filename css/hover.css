@@ -2180,7 +2180,7 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  overflow: hidden;
+  overflow: hidden;  
 }
 .hvr-underline-from-center:before {
   content: "";
@@ -2190,7 +2190,7 @@
   right: 51%;
   bottom: 0;
   background: yellow;
-  height: 4px;
+  height: 4px;  
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
