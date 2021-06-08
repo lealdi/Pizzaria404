@@ -1,6 +1,6 @@
 new Glide(".images", {
     type: 'carousel',
-    perView: 3,
+    perView: 1,
     focusAt: 'center',
     gap: 0,
     autoplay: ''

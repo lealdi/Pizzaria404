@@ -182,7 +182,42 @@ section{
 
 /*Section 2*/
 
+.section2{    
+    background-color: rgb(23, 67, 77);   
+    margin-bottom: 20px;
+    height: 500px; 
+    display: flex;
+    align-items: center;  
+}
+
+.box-sec2{
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.box-inside-sec2{
+    border: 1px solid purple;
+    width: 50%;
+    height: 100%;
+}
+
+.h1-sec2{
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: rgb(226, 198, 138);
+    
+}
+
+.glide__slide{
+    margin-top: 20px;
+}
+
 .glide__slide img{
-    width: 450px;
-    height: 50px;
+    width: 70%;
+    height: 250px;
 }
