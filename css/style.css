@@ -206,6 +206,11 @@ section{
     height: 100%;
 }
 
+.box-inside-sec2 > h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
 .h1-sec2{
     font-size: 25px;
     letter-spacing: 10px;
@@ -220,4 +225,5 @@ section{
 .glide__slide img{
     width: 70%;
     height: 250px;
+    border-radius:10px;
 }
