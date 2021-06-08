@@ -31,32 +31,29 @@ const flavors = [
 let contador = 0
 
 function arrowLeft(){    
-    
+    let h1Sec2 = document.getElementById('hide-h2sec2')
     let paragraphSec2 = document.getElementById('hide-psec2')   
     let flavorImage = document.getElementById('img-sec2')    
-        
-    paragraphSec2.innerHTML = `${flavors[contador++].description}`
-    console.log(contador)
-    if(contador === 3){
-        contador = 0
-    }
     
+    h1Sec2.innerHTML = flavors[contador].flavor
+    paragraphSec2.innerHTML = `${flavors[contador].description}`
+    flavorImage.src = `${flavors[contador--].image[0].url}`
     
+    if(contador === -1){
+        contador = 2               
+    }    
 }
 
 function arrowRight(){    
-    
+    let h1Sec2 = document.getElementById('hide-h2sec2')
     let paragraphSec2 = document.getElementById('hide-psec2')   
     let flavorImage = document.getElementById('img-sec2')       
-        
+    
+    h1Sec2.innerHTML = flavors[contador].flavor
     paragraphSec2.innerText = flavors[contador].description    
     flavorImage.src = `${flavors[contador++].image[0].url}`        
    
     if(contador === 3){
         contador = 0        
-    }    
-    
-    
+    }   
 }
-
-console.log(flavors[0].description)
