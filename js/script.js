@@ -1,31 +1,62 @@
-const sabores = [
-    {
-    sabor: 'Marguerita',
-    descricao: [`Molho de tomate natural temperado com azeite, sal e orégano,
-    Queijo mussarela fatiado.
-    Orégano e manjericão fresco.`]
-    },
-]
+const flavors = [
+        {
+            flavor: 'Marguerita',
+            description: `Molho de tomate natural temperado com azeite, sal e orégano,
+            Queijo mussarela fatiado.
+            Orégano e manjericão fresco.`,
+            image:[
+                {url:"./images/pizza1.jpg"}    
+            ]
+        },
+        {
+            flavor: 'Mussarela',
+            description: `A Pizza de Mussarela é coberta com molho de tomate, queijo tipo mussarela,
+                azeitonas pretas e orégano e massa com fermentação natural,
+                oferece mais sabor e qualidade à sua mesa.`,
+            image:[
+                {url:"./images/pizza2.jpg"}    
+            ]
+        },
+        {
+            flavor: 'Frango com Requeijão',
+            description: `A Pizza de Frango com Requeijão possui uma massa leve e um recheio especial,
+            composto pelo nosso frango desfiado, queijo mussarela e requeijão`,
+            image:[
+                {url:"./images/pizza3.jpg"}    
+            ]
+        },
+    ]
 
-console.log(sabores[0])
 
-function arrowLeft(){
-    let arrowleft = document.getElementById('arrow-left')
-    let paragraphSec2 = document.getElementById('hide-psec2')
-    console.log(paragraphSec2)
+let contador = 0
 
-    paragraphSec2.innerHTML = `${sabores[0].descricao}`
+function arrowLeft(){    
+    
+    let paragraphSec2 = document.getElementById('hide-psec2')   
+    let flavorImage = document.getElementById('img-sec2')    
+        
+    paragraphSec2.innerHTML = `${flavors[contador++].description}`
+    console.log(contador)
+    if(contador === 3){
+        contador = 0
+    }
+    
     
 }
 
+function arrowRight(){    
+    
+    let paragraphSec2 = document.getElementById('hide-psec2')   
+    let flavorImage = document.getElementById('img-sec2')       
+        
+    paragraphSec2.innerText = flavors[contador].description    
+    flavorImage.src = `${flavors[contador++].image[0].url}`        
+   
+    if(contador === 3){
+        contador = 0        
+    }    
+    
+    
+}
 
-
-// Manipular o slider
-new Glide(".images", {
-    type: 'carousel',
-    perView: 1,
-    focusAt: 'center',
-    gap: 0,
-    autoplay: ''
-
-}).mount()
+console.log(flavors[0].description)

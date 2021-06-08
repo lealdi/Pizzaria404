@@ -211,6 +211,29 @@ section{
     margin-bottom: 20px;
 }
 
+.box-inside-sec2:nth-of-type(2){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-inside-sec2 img{
+    width: 350px;
+    height: 250px;
+}
+
+.box-inside-sec2 button{
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+    
+    cursor: pointer;
+}
+
+.box-inside-sec2 button:active{
+    transform: scale(0.9)
+}
+
 .h1-sec2{
     font-size: 25px;
     letter-spacing: 10px;
@@ -218,12 +241,8 @@ section{
     
 }
 
-.glide__slide{
-    margin-top: 20px;
+#img-sec2{
+    border-radius: 10px;
 }
 
-.glide__slide img{
-    width: 70%;
-    height: 250px;
-    border-radius:10px;
-}
+
