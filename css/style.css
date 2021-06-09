@@ -4,6 +4,10 @@
     box-sizing: border-box;   
 }
 
+:root{
+    --base-color:rgb(255, 255, 255);
+}
+
 body{
     font-family: 'Nunito Sans', sans-serif;
     background-color: rgb(197, 194, 194);
@@ -27,7 +31,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(23, 67, 77);
+    background-color: var(--base-color);
 }
 
 .logo{
@@ -96,26 +100,31 @@ nav ul li a:hover{
 }
 
 nav ul li:nth-of-type(4){    
-    background-color: yellow;
+    background-color: #a75c5c81;
     border-radius: 5px;
     transition: 0.2s;
 }
 
 nav ul li:nth-of-type(4):hover{        
-    background-color: rgb(23, 67, 77);
+    background-color: var(--base-color);
 }
 
 .slogan{
     font-size: 18px;
-    color:rgb(22, 22, 22);
+    color:#626262;
 }
 
 .slogan h1{
     font-family: 'Merienda', cursive;    
+    letter-spacing: 10px;    
 }
 
 .slogan p{    
-    color: yellow;
+    color: #626262;
+}
+
+.hvr-underline-from-center{
+    color: #626262;
 }
 
 /**********************/
@@ -183,7 +192,7 @@ section{
 /*Section 2*/
 
 .section2{    
-    background-color: rgb(23, 67, 77);   
+    background-color: var(--base-color);   
     margin-bottom: 20px;
     height: 500px; 
     display: flex;
@@ -237,7 +246,7 @@ section{
 .h1-sec2{
     font-size: 25px;
     letter-spacing: 10px;
-    color: rgb(226, 198, 138);
+    color: rgb(10, 10, 10);
     
 }
 
