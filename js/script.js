@@ -62,7 +62,7 @@ function arrowRight(){
 
 new Glide(".images", {
     type: 'carousel',
-    perView: 3,
+    perView: 2,
     focusAt: 'center',
     gap: 10,
     autoplay: ''
