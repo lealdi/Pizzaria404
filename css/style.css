@@ -99,13 +99,13 @@ nav ul li a:hover{
     transform: scale(1.1);
 }
 
-nav ul li:nth-of-type(4){    
+header > nav ul li:nth-of-type(4){    
     background-color: #a75c5c81;
     border-radius: 5px;
     transition: 0.2s;
 }
 
-nav ul li:nth-of-type(4):hover{        
+header > nav ul li:nth-of-type(4):hover{        
     background-color: var(--base-color);
 }
 
@@ -162,8 +162,7 @@ section{
     margin-top: 50px;
 }
 
-.box-inside-sec1{
-    border: 1px solid pink;
+.box-inside-sec1{    
     width: 320px;
     height: 250px;
     display: flex;
@@ -190,7 +189,7 @@ section{
 
 .section2{    
     background-color: rgba(216, 189, 116, 0.424);   
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     height: 500px; 
     display: flex;
     align-items: center;  
@@ -259,4 +258,65 @@ section{
     border-radius: 10px;
 }
 
+/************************************/
 
+/*Section 3*/
+
+.section3{
+    background-color: #d1d1d1;
+    background-image: url('/images/icon-sec3-brackground.png');
+    background-repeat: repeat-x repeat-y;    
+    background-size: 30px 30px;
+    border-top: 1px solid black;
+    height: 400px;
+}
+
+.section3 .nav-section3 h2{
+    padding-top: 20px;
+    color: #020202ea;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    letter-spacing: 10px;    
+}
+
+.section3 .container{
+    border: 1px solid red;
+    height: 100%;
+}
+
+.nav-section3{
+    border: 3px solid green;
+    height: 100%; 
+}
+
+.people__image{
+    border: 1px solid blue;
+    width: 50px;
+    height: 50px;
+}
+
+.comment__people{
+    border: 1px solid black;
+    width: 90%;
+    height: 100px;
+}
+
+/*Biblioteca Slider*/
+
+
+.glide__slide{    
+    border: 1px solid black;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.glide__arrow,
+.glide__arrow--left,
+.glide__arrow--right{
+    display: none;
+}
+/******************/
