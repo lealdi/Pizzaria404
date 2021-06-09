@@ -27,9 +27,8 @@ const flavors = [
         },
     ]
 
-
+// Funcoes Slider
 let contador = 0
-
 function arrowLeft(){    
     let h1Sec2 = document.getElementById('hide-h2sec2')
     let paragraphSec2 = document.getElementById('hide-psec2')   
@@ -57,3 +56,4 @@ function arrowRight(){
         contador = 0        
     }   
 }
+// Slider End
