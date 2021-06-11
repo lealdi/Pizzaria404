@@ -310,7 +310,7 @@ footer{
 }
 
 footer > .container{        
-    height: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;    
 }
@@ -328,8 +328,7 @@ footer .footer-container{
     
 }
 
-footer .footerbox{
-   
+footer .footerbox{   
     width: 50%;          
 }
 footer .ftel{
