@@ -305,8 +305,7 @@ section{
 
 /*Footer*/
 footer{    
-    padding-top: 10px;
-    
+    padding-top: 10px;    
 }
 
 footer > .container{        
@@ -324,35 +323,57 @@ footer .footer-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center;    
 }
 
-footer .footerbox{   
-    width: 50%;          
+footer .footerbox{                
+    width: 50%;         
+    height: 100px;    
 }
+
+footer .footerbox:nth-of-type(1){
+    border-right: 1px solid black;
+}
+
 footer .ftel{
     line-height: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-footer .social-container{
+
+footer .ftel p:nth-of-type(1)::before{   
+    content: url('../images/phone1.png');
+    margin-right: 5px;            
+}
+
+footer .ftel p:nth-of-type(2)::before{   
+    content: url('../images/phone1.png');
+    margin-right: 5px;            
+}
+
+footer .social-container{   
     margin: 0 auto;    
     width: 50%;
     height: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly;    
 }
 
-footer .social-container img{
+footer .social-img{
     width: 30px;
-    height: 30px;    
+    height: 30px;   
+}
+
+footer .social-container img{    
+    width: 100%;
+    height: 100%;    
 }
 
 footer .end-footer{
+    margin: 10px;
     padding: 10px;
     border-top: 1px solid black;
 }
