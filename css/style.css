@@ -6,11 +6,12 @@
 
 :root{
     --base-color:rgb(255, 255, 255);
+    --gray-color:#626262;
 }
 
 body{
     font-family: 'Nunito Sans', sans-serif;
-    background-color: rgb(197, 194, 194);
+    background-color: rgb(255, 251, 251);
 }
 
 /*Container*/
@@ -88,8 +89,7 @@ nav ul li{
       font-weight:600;    
 }
 
-nav ul li a{
-    color: rgb(22, 22, 22);
+nav ul li a{    
     text-decoration: none;
     padding: 8px;
     transition: 0.2;
@@ -111,7 +111,7 @@ header > nav ul li:nth-of-type(4):hover{
 
 .slogan{
     font-size: 18px;
-    color:#626262;
+    color:var(--gray-color);
 }
 
 .slogan h1{
@@ -120,11 +120,11 @@ header > nav ul li:nth-of-type(4):hover{
 }
 
 .slogan p{    
-    color: #626262;
+    color: rgb(216, 189, 116);
 }
 
 .hvr-underline-from-center{
-    color: #626262;
+    color: var(--gray-color);
 }
 
 /**********************/
@@ -302,6 +302,63 @@ section{
     padding: 5px;
     line-height: 35px;
 }
+
+/*Footer*/
+footer{    
+    padding-top: 10px;
+    
+}
+
+footer > .container{        
+    height: 300px;
+    display: flex;
+    flex-direction: column;    
+}
+
+footer .logo{
+    margin: 0 auto;
+}
+
+footer .footer-container{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+footer .footerbox{
+   
+    width: 50%;          
+}
+footer .ftel{
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .social-container{
+    margin: 0 auto;    
+    width: 50%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .social-container img{
+    width: 30px;
+    height: 30px;    
+}
+
+footer .end-footer{
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+/****************************/
 
 /*Biblioteca Slider*/
 
