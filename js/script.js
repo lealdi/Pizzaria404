@@ -59,8 +59,24 @@ function arrowRight(){
 // Slider End
 
 // Menu Hamburguer
+function closeMenu(){
+    let hamburguerActive = document.getElementById('hamburguer-active')      
+    hamburguerActive.removeAttribute('id','hamburguer-active')  
+    hamburguerActive.setAttribute('id','mostrar')  
+    hamburguerActive.innerHTML = '' 
+    
+}
 
-function openMenu() {
+function openMenu() {   
+    let hamburguerActive = document.getElementById('mostrar')        
+    hamburguerActive.setAttribute('id','hamburguer-active')
+    hamburguerActive.innerHTML = `<ul>
+    <li><a class="hvr-underline-from-center" href="">Cardápio</a></li>
+    <li><a class="hvr-underline-from-center" href="">Galeria</a></li>                
+    <li><a class="hvr-underline-from-center" href="">Sobre</a></li>
+    <li><a class="hvr-underline-from-center" href="">Fazer pedido</a></li>
+    <li onclick="closeMenu()">X</li>
+</ul>`
     
 }
 
