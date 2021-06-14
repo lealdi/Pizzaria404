@@ -491,6 +491,23 @@ footer .end-footer{
         margin-bottom: 10px;
         width: 100%;        
     }
+    /*Media section2*/
+    .section2{
+        height: 550px;
+        border: 1px solid purple;
+        align-items: baseline;        
+    }
 
+    .box-sec2{        
+        flex-direction: column;       
+          
+        justify-content: center;  
+        margin-top: 40px;          
+    }
+
+    .box-inside-sec2 > p{
+        margin-bottom: 15px;
+    }   
+    /**/
 }
 /**************************/
