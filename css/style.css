@@ -234,6 +234,16 @@ section{
     height: 250px;
 }
 
+.box-inside-sec2 > button{
+    border: none;
+    background-color: rgba(216, 189, 116, 0);
+}
+
+.box-inside-sec2 button > img{
+    width: 20px;
+    height: 20px;
+}
+
 .box-inside-sec2 button{
     width: 20px;
     height: 20px;
@@ -493,8 +503,7 @@ footer .end-footer{
     }
     /*Media section2*/
     .section2{
-        height: 550px;
-        border: 1px solid purple;
+        height: 550px;        
         align-items: baseline;        
     }
 
@@ -511,3 +520,37 @@ footer .end-footer{
     /**/
 }
 /**************************/
+@media  (max-width: 750px){
+    .section2{        
+        height: 750px;  
+        justify-content: space-between;      
+    }
+    .h1-sec2 h1{
+        margin-bottom: 120px;
+    }
+
+    .box-inside-sec2{
+        margin:50px 0 40px 0;
+    }
+    .section3{
+        height: 500px;
+    }
+    
+    .comment__people{
+        width:100%;       
+    }
+    .box-inside-sec2 img{
+        height: 300px;
+    }
+}
+
+@media (max-width:610px){
+    .section1{
+        border: 1px solid purple;
+        height: 950px;        
+    }
+
+    .slogan-sec1{
+        padding-bottom: 30px;
+    }     
+}
