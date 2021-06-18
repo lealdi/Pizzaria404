@@ -71,7 +71,8 @@ function openMenu() {
     let hamburguerActive = document.getElementById('mostrar')        
     hamburguerActive.setAttribute('id','hamburguer-active')
     hamburguerActive.innerHTML = `<ul>
-    <li><a class="hvr-underline-from-center" href="">Cardápio</a></li>
+    <li><a class="hvr-underline-from-center" href="./index.html">Home</a></li>
+    <li><a class="hvr-underline-from-center" href="./cardapio.html">Cardápio</a></li>
     <li><a class="hvr-underline-from-center" href="">Galeria</a></li>                
     <li><a class="hvr-underline-from-center" href="">Sobre</a></li>
     <li><a class="hvr-underline-from-center" href="">Fazer pedido</a></li>
